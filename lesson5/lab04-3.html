@@ -1,0 +1,822 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04-3</title>
+    <style>
+        .clearfix{
+            overflow: hidden;
+            clear: both;
+        }
+        header{
+            background: #2d303a;
+        }
+        .fixwidth{
+            width:940px;
+            margin: 0 auto;
+            padding: 34px 0;
+        }
+        @font-face{
+            font-family: Lato-Bold;
+            src: url("../fonts/Lato-Bold.ttf")
+        }
+        @font-face{
+            font-family: Lato-Black;
+            src: url("../fonts/Lato-Black.ttf")
+        }
+        @font-face{
+            font-family: Lato-Light;
+            src: url("../fonts/Lato-Light.ttf")
+        }
+        #logo{
+            width:200px;
+            float:left;
+        }
+        a{
+            text-decoration: none;
+        }
+        #logo a{
+            color:#fff;
+            font-family: Lato-Bold;
+            font-size: 25px;
+        }
+        #logo a span{
+            color:#f06c64;
+        }
+        .topnav nav{
+            float:right;
+            width:431px;
+        }
+        .topnav nav ul li{
+            float:left;
+        }
+        .topnav nav ul li a{
+            color:#fff;
+            display: block;
+            padding-top: 10px;
+            padding-right: 20px;
+            font-family: Lato-Bold;
+            font-size: 12px;
+        }
+        .selected,
+        .topnav nav ul li a:hover{
+            color:#f06c64;
+        }
+        #banner{
+            background: #f06c64;
+            padding: 50px 0;
+        }
+        #ourServices{
+            padding: 66px 0;
+            background: #f2f2f2;
+        }
+        #portfolio h2,
+        #aboutUs h3,
+        #getaQuote h3,
+        #ourServices{
+            font-family: Lato-Black;
+            font-size: 20px;
+            color:#666d89;
+        }
+        #portfolio p,
+        #aboutUs p,
+        #getaQuote p,
+        #ourServices p{
+            font-family: Lato-Light;
+            color:#767e9e;
+            font-size: 18px;
+            line-height: 30px;
+            padding:30px 0;
+        }
+        .itemService{
+            width:200px;
+            float:left;
+            margin-right: 20px;
+            padding-left: 80px;
+        }
+        #portfolio {
+            background-color: #2d303a;
+            padding: 65px 0;
+        }
+        .portfolio {
+            margin-bottom: 18px;
+        }
+        .portfolio ul li {
+            float: left;
+            margin-right: 10px;
+        }
+        .portfolio ul li a {
+            display: block;
+            color: #767e9e;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #767e9e;
+            border-radius: 5px;
+        }
+        .selectedx, .portfolio ul li a:hover {
+            border: 1px solid #c5c5c5 !important;
+            color: #c5c5c5 !important;
+        }
+        .itemx {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #aboutUs .itemAvata h4, #ourService h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #666d89;
+        }
+        .itemfix {
+            margin-right: 0;
+            width: 150px;
+            height: 150px;
+        }
+        .pencil {
+            background: url("../images/cute.jpg") no-repeat;
+        }
+        .light {
+            background: url("../images/mu.jpg") no-repeat;
+        }
+        .phone {
+            background: url("../images/toc.jpg") no-repeat;
+
+        }
+        .message {
+            background: url("../images/avatar.jpg") no-repeat;
+
+        }
+        .star {
+            background: url("../images/cute.jpg") no-repeat;
+
+        }
+        #aboutUs {
+            padding: 66px 0;
+        }
+        .itemAvata {
+            float: left;
+            width: 200px;
+            margin-right: 13px;
+        }
+        .itemAvata img {
+            margin-bottom: 20px;
+        }
+        #aboutUs .itemAvata p, #ourServices .itemService p {
+            line-height: 21px;
+        }
+        #getaQuote {
+            padding: 66px;
+            background-color: #f06c64;
+        }
+        .itemform {
+            float: left;
+            width: 620px;
+        }
+        .itemform input, .itemform textarea {
+            background-color: #d6564f;
+            width: 90%;
+            border: none;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #f48c8f;
+        }
+        .contactform {
+            float: left;
+            width: 300px;
+        }
+        .contactform h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #f0d8d9;
+        }
+        .contactform .css, .contactform a {
+            color: #f0d8d9 !important;
+        }
+        .contactform ul li a {
+            background-position: 0 9px;
+            display: block;
+            padding: 5px 20px;
+        }
+        .location {
+            background: url("../images/cute.jpg");
+        }
+        .mai {
+            background: url("../images/toc.jpg");
+        }
+        .phone {
+            background: url("../images/mu.jpg");
+        }
+        footer .footer li, #aboutUs .itemAvata ul li {
+            float: left;
+            margin-right: 5px;
+        }
+        footer {
+            background-color: #2d303a;
+            padding: 22px 0;
+        }
+        footer .footer {
+            float: right;
+        }
+        footer address {
+            float: left;
+            width: 300px;
+            padding-top: 10px;
+            color: #c5c5c5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topnav clearfix">
+            <div id="logo">
+                <a href="#">SINGOLO <span>*</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="" class="selected">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner" class="clearfix">
+        <div class="fixwidth clearfix">
+            <img src="images/banner.jpg" alt="" width="100%">
+        </div>
+    </section>
+    <section id="ourServices" class="clearfix">
+        <div class="fixwidth clearfix">
+            <h1>Our Services</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ratione veniam a facilis porro iure voluptas! Sed earum quisquam explicabo dolor nam ad, labore consequatur sequi alias, quidem laboriosam accusamus.</p>
+            <div class="itemService pencil">
+                <h3>Custom Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService light">
+                <h3>Inovative Ideas</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService itemfix heart">
+                <h3>Love Is The Answer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="itemService message">
+                <h3>Responsive Layout</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService phone">
+                <h3>24/7 Support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService itemfix star">
+                <h3>Feel Like A Star</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="clearfix">
+        <div class="fixwidth">
+            <h2>Portfolio</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttior ligula.
+                eget lacinia odio sem nec elit.
+            </p>
+            <nav class="portfolio clearfix">
+                <ul>
+                    <li><a href="" class="selectedx">All</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Graphic Design</a></li>
+                    <li><a href="">Artwork</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="itemx"><img src="images/avatar.jpg" alt="" style="width: 150px; height: 150px;"></div>
+        <div class="itemx"><img src="images/anh.jpg" alt=""></div>
+        <div class="itemx"><img src="images/be.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/cute.jpg" alt=""></div>
+        <div class="itemx"><img src="images/mu.jpg" alt=""></div>
+        <div class="itemx"><img src="images/toc.jpg" alt=""></div>
+        <div class="itemx"><img src="images/anh.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/avatar.jpg" alt=""  style="width: 150px; height: 150px;"></div>
+        <div class="itemx"><img src="images/be.jpg" alt=""></div>
+        <div class="itemx"><img src="images/cute.jpg" alt=""></div>
+        <div class="itemx"><img src="images/mu.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/toc.jpg" alt=""></div>
+    </section>
+    <section id="aboutUs">
+        <div class="fixwidth">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dolorem voluptatem odit aliquam natus itaque commodi esse! Nisi enim officia, vitae, accusamus, atque praesentium debitis error unde dignissimos quo dolorem.</p>
+            <div class="itemAvata">
+                <img src="images/cute.jpg" alt="">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</h4>
+                <ul>
+                    <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                </ul>
+                <div class="itemAvata">
+                    <img src="images/mu.jpg" alt="">
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                    <ul>
+                        <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="itemAvata">
+                    <img src="images/cute.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itemAvata"></div>
+                    <img src="images/mu.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itemAvata itemfix"></div>
+                    <img src="images/cute.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="getaQuote" class="clearfix">
+        <div class="fixwidth">
+            <h3>Get a Quote</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae deleniti sequi! Tempore sit illo minima, exercitationem hic dolore facere harum quod, animi quam pariatur nihil doloribus consectetur! Sint, neque.</p>
+            <div class="itemform">
+                <input type="text" name="" id="" placeholder="Name (Required)">
+                <input type="text" name="" id="" placeholder="Email (Required)">
+                <input type="text" name="" id="" placeholder="Subject (Required)">
+                <textarea name="" id="" cols="30" rows="10">Describe your project in detail...</textarea>
+            </div>
+            <div class="contactform">
+                <h4>Contact Information</h4>
+                <p class="css">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi totam libero nemo enim magnam unde quidem atque error molestias dolore eius consequuntur suscipit assumenda quia ullam vero, hic veritatis!</p>
+                <ul>
+                    <li><a href="" class="location">Elm St. 14/05 Lost City</a></li>
+                    <li><a href="" class="phone">039432743289</a></li>
+                    <li><a href="" class="email">info@singole.com</a></li>
+                </ul>
+        </div>
+    </section>
+    <footer class="clearfix">
+        <div class="fixwidth">
+            <address>
+                <p>Copyright 2003 . by Ruby</p>
+            </address>
+            <ul>
+                <li><a href=""><img src="images/anh.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04-3</title>
+    <style>
+        .clearfix{
+            overflow: hidden;
+            clear: both;
+        }
+        header{
+            background: #2d303a;
+        }
+        .fixwidth{
+            width:940px;
+            margin: 0 auto;
+            padding: 34px 0;
+        }
+        @font-face{
+            font-family: Lato-Bold;
+            src: url("../fonts/Lato-Bold.ttf")
+        }
+        @font-face{
+            font-family: Lato-Black;
+            src: url("../fonts/Lato-Black.ttf")
+        }
+        @font-face{
+            font-family: Lato-Light;
+            src: url("../fonts/Lato-Light.ttf")
+        }
+        #logo{
+            width:200px;
+            float:left;
+        }
+        a{
+            text-decoration: none;
+        }
+        #logo a{
+            color:#fff;
+            font-family: Lato-Bold;
+            font-size: 25px;
+        }
+        #logo a span{
+            color:#f06c64;
+        }
+        .topnav nav{
+            float:right;
+            width:431px;
+        }
+        .topnav nav ul li{
+            float:left;
+        }
+        .topnav nav ul li a{
+            color:#fff;
+            display: block;
+            padding-top: 10px;
+            padding-right: 20px;
+            font-family: Lato-Bold;
+            font-size: 12px;
+        }
+        .selected,
+        .topnav nav ul li a:hover{
+            color:#f06c64;
+        }
+        #banner{
+            background: #f06c64;
+            padding: 50px 0;
+        }
+        #ourServices{
+            padding: 66px 0;
+            background: #f2f2f2;
+        }
+        #portfolio h2,
+        #aboutUs h3,
+        #getaQuote h3,
+        #ourServices{
+            font-family: Lato-Black;
+            font-size: 20px;
+            color:#666d89;
+        }
+        #portfolio p,
+        #aboutUs p,
+        #getaQuote p,
+        #ourServices p{
+            font-family: Lato-Light;
+            color:#767e9e;
+            font-size: 18px;
+            line-height: 30px;
+            padding:30px 0;
+        }
+        .itemService{
+            width:200px;
+            float:left;
+            margin-right: 20px;
+            padding-left: 80px;
+        }
+        #portfolio {
+            background-color: #2d303a;
+            padding: 65px 0;
+        }
+        .portfolio {
+            margin-bottom: 18px;
+        }
+        .portfolio ul li {
+            float: left;
+            margin-right: 10px;
+        }
+        .portfolio ul li a {
+            display: block;
+            color: #767e9e;
+            font-size: 12px;
+            padding: 5px;
+            border: 1px solid #767e9e;
+            border-radius: 5px;
+        }
+        .selectedx, .portfolio ul li a:hover {
+            border: 1px solid #c5c5c5 !important;
+            color: #c5c5c5 !important;
+        }
+        .itemx {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #aboutUs .itemAvata h4, #ourService h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #666d89;
+        }
+        .itemfix {
+            margin-right: 0;
+            width: 150px;
+            height: 150px;
+        }
+        .pencil {
+            background: url("../images/cute.jpg") no-repeat;
+        }
+        .light {
+            background: url("../images/mu.jpg") no-repeat;
+        }
+        .phone {
+            background: url("../images/toc.jpg") no-repeat;
+
+        }
+        .message {
+            background: url("../images/avatar.jpg") no-repeat;
+
+        }
+        .star {
+            background: url("../images/cute.jpg") no-repeat;
+
+        }
+        #aboutUs {
+            padding: 66px 0;
+        }
+        .itemAvata {
+            float: left;
+            width: 200px;
+            margin-right: 13px;
+        }
+        .itemAvata img {
+            margin-bottom: 20px;
+        }
+        #aboutUs .itemAvata p, #ourServices .itemService p {
+            line-height: 21px;
+        }
+        #getaQuote {
+            padding: 66px;
+            background-color: #f06c64;
+        }
+        .itemform {
+            float: left;
+            width: 620px;
+        }
+        .itemform input, .itemform textarea {
+            background-color: #d6564f;
+            width: 90%;
+            border: none;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #f48c8f;
+        }
+        .contactform {
+            float: left;
+            width: 300px;
+        }
+        .contactform h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #f0d8d9;
+        }
+        .contactform .css, .contactform a {
+            color: #f0d8d9 !important;
+        }
+        .contactform ul li a {
+            background-position: 0 9px;
+            display: block;
+            padding: 5px 20px;
+        }
+        .location {
+            background: url("../images/cute.jpg");
+        }
+        .mai {
+            background: url("../images/toc.jpg");
+        }
+        .phone {
+            background: url("../images/mu.jpg");
+        }
+        footer .footer li, #aboutUs .itemAvata ul li {
+            float: left;
+            margin-right: 5px;
+        }
+        footer {
+            background-color: #2d303a;
+            padding: 22px 0;
+        }
+        footer .footer {
+            float: right;
+        }
+        footer address {
+            float: left;
+            width: 300px;
+            padding-top: 10px;
+            color: #c5c5c5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topnav clearfix">
+            <div id="logo">
+                <a href="#">SINGOLO <span>*</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="" class="selected">HOME</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner" class="clearfix">
+        <div class="fixwidth clearfix">
+            <img src="images/banner.jpg" alt="" width="100%">
+        </div>
+    </section>
+    <section id="ourServices" class="clearfix">
+        <div class="fixwidth clearfix">
+            <h1>Our Services</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, ratione veniam a facilis porro iure voluptas! Sed earum quisquam explicabo dolor nam ad, labore consequatur sequi alias, quidem laboriosam accusamus.</p>
+            <div class="itemService pencil">
+                <h3>Custom Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService light">
+                <h3>Inovative Ideas</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService itemfix heart">
+                <h3>Love Is The Answer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="itemService message">
+                <h3>Responsive Layout</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService phone">
+                <h3>24/7 Support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+            <div class="itemService itemfix star">
+                <h3>Feel Like A Star</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam dignissimos numquam perferendis asperiores explicabo, cum quibusdam mollitia aut dicta distinctio voluptates perspiciatis beatae quam sapiente vitae minima ullam obcaecati.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="clearfix">
+        <div class="fixwidth">
+            <h2>Portfolio</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttior ligula.
+                eget lacinia odio sem nec elit.
+            </p>
+            <nav class="portfolio clearfix">
+                <ul>
+                    <li><a href="" class="selectedx">All</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Graphic Design</a></li>
+                    <li><a href="">Artwork</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="itemx"><img src="images/avatar.jpg" alt="" style="width: 150px; height: 150px;"></div>
+        <div class="itemx"><img src="images/anh.jpg" alt=""></div>
+        <div class="itemx"><img src="images/be.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/cute.jpg" alt=""></div>
+        <div class="itemx"><img src="images/mu.jpg" alt=""></div>
+        <div class="itemx"><img src="images/toc.jpg" alt=""></div>
+        <div class="itemx"><img src="images/anh.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/avatar.jpg" alt=""  style="width: 150px; height: 150px;"></div>
+        <div class="itemx"><img src="images/be.jpg" alt=""></div>
+        <div class="itemx"><img src="images/cute.jpg" alt=""></div>
+        <div class="itemx"><img src="images/mu.jpg" alt=""></div>
+        <div class="itemx itemfix"><img src="images/toc.jpg" alt=""></div>
+    </section>
+    <section id="aboutUs">
+        <div class="fixwidth">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto dolorem voluptatem odit aliquam natus itaque commodi esse! Nisi enim officia, vitae, accusamus, atque praesentium debitis error unde dignissimos quo dolorem.</p>
+            <div class="itemAvata">
+                <img src="images/cute.jpg" alt="">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</h4>
+                <ul>
+                    <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                </ul>
+                <div class="itemAvata">
+                    <img src="images/mu.jpg" alt="">
+                    <h4>Lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                    <ul>
+                        <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                        <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="itemAvata">
+                    <img src="images/cute.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itemAvata"></div>
+                    <img src="images/mu.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="itemAvata itemfix"></div>
+                    <img src="images/cute.jpg" alt="">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum sit optio quasi dicta, quae facere dolores ipsam eius provident mollitia corporis, nobis in ex illum eos beatae, nihil accusamus?</p>
+                        <ul>
+                            <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/be.jpg" alt=""></a></li>
+                            <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="getaQuote" class="clearfix">
+        <div class="fixwidth">
+            <h3>Get a Quote</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae deleniti sequi! Tempore sit illo minima, exercitationem hic dolore facere harum quod, animi quam pariatur nihil doloribus consectetur! Sint, neque.</p>
+            <div class="itemform">
+                <input type="text" name="" id="" placeholder="Name (Required)">
+                <input type="text" name="" id="" placeholder="Email (Required)">
+                <input type="text" name="" id="" placeholder="Subject (Required)">
+                <textarea name="" id="" cols="30" rows="10">Describe your project in detail...</textarea>
+            </div>
+            <div class="contactform">
+                <h4>Contact Information</h4>
+                <p class="css">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi totam libero nemo enim magnam unde quidem atque error molestias dolore eius consequuntur suscipit assumenda quia ullam vero, hic veritatis!</p>
+                <ul>
+                    <li><a href="" class="location">Elm St. 14/05 Lost City</a></li>
+                    <li><a href="" class="phone">039432743289</a></li>
+                    <li><a href="" class="email">info@singole.com</a></li>
+                </ul>
+        </div>
+    </section>
+    <footer class="clearfix">
+        <div class="fixwidth">
+            <address>
+                <p>Copyright 2003 . by Ruby</p>
+            </address>
+            <ul>
+                <li><a href=""><img src="images/anh.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/cute.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/mu.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/toc.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+>>>>>>> 56d533de745b472aafb1ab399916a3e44f40a741
+</html>

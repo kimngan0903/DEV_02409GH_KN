@@ -1,0 +1,238 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04-1</title>
+    <style>
+        nav,
+        nav ul,
+        nav li,
+        nav a{
+            margin:0;
+            padding:0;
+            border:none;
+            outline: none;
+        }
+        nav{
+            height:40px;
+            background:#4c4e5a;
+            background:-webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background:-moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background:-o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        nav ul li{
+            position:relative;
+            list-style: none;
+            float:left;
+            display:block;
+            height:40px;
+        }
+        nav ul li a{
+            display:block;
+            padding: 0 14px;
+            margin:6px 0;
+            line-height:28px;
+            text-decoration: none;
+            border-left:1px solid #393942;
+            border-right: 1px solid #4f5058;
+            font-family:Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            font-size:13px;
+            color:#f3f3f3;
+            text-shadow:1px 1px 1px rgba(0,0,0,6);
+            -moz-transition: color .2s ease-in-out;
+            -webkit-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out
+        }
+        nav ul li:first-child a{
+            border-left:none;
+        }
+        nav ul li:last-child a{
+            border-right:none;
+        }
+        nav ul li:hover >a{
+            color:#8fde62;
+        }
+        ul.submenu{
+            position: absolute;
+            top:40px;
+            left:0;
+            width:100px;
+            opacity:0;
+            background: #1f2024;
+            -webkit-border-radius: 0 0 5px 5px;
+            -moz-border-radius: 0 0 5px 5px;
+            border-radius:0 0 5px 5px;
+            -webkit-transition:opacity .25s ease .1s;
+            -moz-transition:opacity .25s ease .1s ;
+            -o-transition: opacity .25s ease .1s;
+            -ms-transition:opacity .25s ease .1s;
+            transition:opacity .25s ease .1s;
+        }
+        nav ul li:hover>ul.submenu{
+            opacity:10;
+            height:auto;
+        }
+        .submenu li a{
+            border:none
+        }
+        .submenu li{
+            width:100%;
+            border-bottom:1px solid #393942;
+        }
+        .submenu li:last-child{
+            border-bottom:none;
+        }
+        .submenu li a{
+            width:100%;
+            padding:4px 0px 4px 40px;
+            margin:0;
+            border:none;
+        }
+    </style>
+</head>
+<body></body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a>
+                <ul class="submenu">
+                    <li><a href="#" class="css3">CSS3</a></li>
+                    <li><a href="#" class="html5">HTML5</a></li>
+                    <li><a href="#" class="php">PHP</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04-1</title>
+    <style>
+        nav,
+        nav ul,
+        nav li,
+        nav a{
+            margin:0;
+            padding:0;
+            border:none;
+            outline: none;
+        }
+        nav{
+            height:40px;
+            background:#4c4e5a;
+            background:-webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background:-moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background:-o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        nav ul li{
+            position:relative;
+            list-style: none;
+            float:left;
+            display:block;
+            height:40px;
+        }
+        nav ul li a{
+            display:block;
+            padding: 0 14px;
+            margin:6px 0;
+            line-height:28px;
+            text-decoration: none;
+            border-left:1px solid #393942;
+            border-right: 1px solid #4f5058;
+            font-family:Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            font-size:13px;
+            color:#f3f3f3;
+            text-shadow:1px 1px 1px rgba(0,0,0,6);
+            -moz-transition: color .2s ease-in-out;
+            -webkit-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out
+        }
+        nav ul li:first-child a{
+            border-left:none;
+        }
+        nav ul li:last-child a{
+            border-right:none;
+        }
+        nav ul li:hover >a{
+            color:#8fde62;
+        }
+        ul.submenu{
+            position: absolute;
+            top:40px;
+            left:0;
+            width:100px;
+            opacity:0;
+            background: #1f2024;
+            -webkit-border-radius: 0 0 5px 5px;
+            -moz-border-radius: 0 0 5px 5px;
+            border-radius:0 0 5px 5px;
+            -webkit-transition:opacity .25s ease .1s;
+            -moz-transition:opacity .25s ease .1s ;
+            -o-transition: opacity .25s ease .1s;
+            -ms-transition:opacity .25s ease .1s;
+            transition:opacity .25s ease .1s;
+        }
+        nav ul li:hover>ul.submenu{
+            opacity:10;
+            height:auto;
+        }
+        .submenu li a{
+            border:none
+        }
+        .submenu li{
+            width:100%;
+            border-bottom:1px solid #393942;
+        }
+        .submenu li:last-child{
+            border-bottom:none;
+        }
+        .submenu li a{
+            width:100%;
+            padding:4px 0px 4px 40px;
+            margin:0;
+            border:none;
+        }
+    </style>
+</head>
+<body></body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a>
+                <ul class="submenu">
+                    <li><a href="#" class="css3">CSS3</a></li>
+                    <li><a href="#" class="html5">HTML5</a></li>
+                    <li><a href="#" class="php">PHP</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+>>>>>>> 56d533de745b472aafb1ab399916a3e44f40a741
+</html>

@@ -1,0 +1,46 @@
+<<<<<<< HEAD
+Làm việc với CSS
+- Nhúng css vào trang html
+    + style inline: Phạm vi sử dụng thẻ html hiện tại
+    + tag style: Phạm vi sử dụng trên toàn bộ trang html
+    + external style (file.css): Phạm vi sử dụng trên toàn bộ site
+        ++ nhúng file css bằng thẻ link (hoặc import)
+- Bộ chọn:
+    + Bộ chọn phần tử: html, body, h1,...
+    + Bộ chọn id: #id (ví dụ: #zone1{...})
+    + Bộ chọn class: 
+        ++ .class-name {...}; ví dụ: .item{...}
+    + Bộ chọn ngữ cảnh:
+        ++ :hover
+        ++ :Before / :after
+        ...
+    + Bộ chọn giá trị thuộc tính:
+        ++ tag[attr=value] {...}; #id[...]{...}; .class-name[attr=value]{...}
+    + Bộ chọn cha con:
+        ++ tag01 tag02 {...} => quy tắc cho tag02 bên trong tag01
+            ví dụ: 
+                #zone1 .item {...}
+=======
+Làm việc với CSS
+- Nhúng css vào trang html
+    + style inline: Phạm vi sử dụng thẻ html hiện tại
+    + tag style: Phạm vi sử dụng trên toàn bộ trang html
+    + external style (file.css): Phạm vi sử dụng trên toàn bộ site
+        ++ nhúng file css bằng thẻ link (hoặc import)
+- Bộ chọn:
+    + Bộ chọn phần tử: html, body, h1,...
+    + Bộ chọn id: #id (ví dụ: #zone1{...})
+    + Bộ chọn class: 
+        ++ .class-name {...}; ví dụ: .item{...}
+    + Bộ chọn ngữ cảnh:
+        ++ :hover
+        ++ :Before / :after
+        ...
+    + Bộ chọn giá trị thuộc tính:
+        ++ tag[attr=value] {...}; #id[...]{...}; .class-name[attr=value]{...}
+    + Bộ chọn cha con:
+        ++ tag01 tag02 {...} => quy tắc cho tag02 bên trong tag01
+            ví dụ: 
+                #zone1 .item {...}
+>>>>>>> 56d533de745b472aafb1ab399916a3e44f40a741
+        ++ tag01 

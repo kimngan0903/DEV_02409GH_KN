@@ -1,0 +1,208 @@
+body {
+    background-color: #ccc;
+}
+header {
+    background-color: #fff;
+}
+.container {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    padding: .5rem 0;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+}
+.logo img {
+    width: 100%;
+}
+nav .icon-nav {
+    border: 1px solid;
+    border-radius: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+.icon-nav span {
+    margin: 2px 0;
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--gray);
+    transition: all 0.3s ease;
+}
+
+.icon-nav:hover {
+    cursor: pointer;
+    position: relative;
+    /* box-shadow: 0px 5px 5px 5px 5px rgba(0, 0, 0, 1); */
+}
+.icon-nav:hover span:nth-child(2) {
+    display: none;
+}
+.icon-nav:hover span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.icon-nav:hover span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+nav ul {
+    list-style: none;
+    display: none;
+}
+nav ul li a {
+    color: var(--color); /* Màu chữ đen */
+    text-decoration: none;
+}
+nav ul li:hover {
+    color: red;
+    background-color: #fff; /* Màu nền khi hover */
+}
+
+/* nav ul li{
+    position: relative;
+    padding: .5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+} */
+nav ul li {
+    border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    border-left: .5rem solid #bd945f;
+    position: relative;
+    margin: .5rem;
+    padding: 1rem;
+    font-family: "OpenSans-SemiBold";
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #ccc; /* Thêm đường ngăn cách */
+}
+
+
+/* nav ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 2rem;
+    text-align: left;
+} */
+/* nav li {
+    background-color: #fff;
+    color: black;
+    align-items: center;
+    font-family: "OpenSans-SemiBold";
+    font-weight: bold;
+} */
+/* .icon-nav:hover + ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 420px;
+    right: 0;
+} */
+.icon-nav:hover + ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: #f7f7f7;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);    
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    padding: .5rem 1rem;
+    width: 95%; /* Chiếm toàn bộ chiều ngang */
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    background-color: white; /* Nền trắng*/
+    z-index: 1000;
+    /* box-shadow: 0px 5px 5px 5px 5px rgba(0, 0, 0, 1); */
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    nav .icon-nav {
+        margin: 1rem auto;
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    nav ul {
+        display: flex;
+        /* flex-direction: row;
+        justify-content: flex-end; */
+    }
+    nav ul li {
+        margin: 1rem auto;
+        border: none;
+    }
+    .row {
+        width: 80%;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    nav ul {
+        display: flex;
+        /* flex-direction: row;
+        justify-content: flex-end; */
+    }
+    nav ul li {
+        margin: 1rem auto;
+        border: none;
+    }
+    .row {
+        width: 90%;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    nav ul{
+        margin: 1rem auto;
+        display:flex;
+    }
+    .row {
+        width: 70%;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    nav ul{
+        margin: 1rem auto;
+        display:flex;
+    }
+    .row {
+        width: 80%;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1600px) { 
+    nav ul{
+        margin: 1rem auto;
+        display:flex;
+    }
+    .row {
+        width: 70%;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1920px and up) */
+@media (min-width: 1920px) { 
+  
+}

@@ -1,0 +1,158 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03-3-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: cyan;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(54, 53, 53);
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav > ul {
+            display: flex;
+        } 
+        /* Ẩn menu con */
+        nav li > a + ul {
+            display: none;
+            width: 18rem;
+            position: absolute;
+            background-color: cyan;
+            border-bottom-left-radius: 5ox;
+            border-top-right-radius: 5px;
+        }
+        /* Hiện menu con */
+        nav > ul  > li:hover > a + ul {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid blue;
+        }
+        /* Đường kẻ ngang của menu con */
+        nav > ul > li {
+            border-right: 1px solid red;
+            position: relative;
+        }
+        /* Bỏ đường kẻ ngang cuối cùng của menu con */
+        nav li > ul > li {
+            border-bottom: 1px solid gold;
+        }
+        nav li > ul > li:last-child{
+            border-bottom: 0;
+        }
+        nav a{
+            display: block;
+            padding: .5rem;
+        }
+        nav a:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+            <li><a href="#" title="Sản phẩm">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Lập trình Web PHP&MYSQL</a></li>
+                    <li><a href="#">Lập trình Web NetCore</a></li>
+                    <li><a href="#">Lập trình Web Java SpringBoot</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+            <li><a href="#" title="Hỗ trợ">Hỗ trợ</a></li>
+            <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03-3-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: cyan;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(54, 53, 53);
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav > ul {
+            display: flex;
+        } 
+        /* Ẩn menu con */
+        nav li > a + ul {
+            display: none;
+            width: 18rem;
+            position: absolute;
+            background-color: cyan;
+            border-bottom-left-radius: 5ox;
+            border-top-right-radius: 5px;
+        }
+        /* Hiện menu con */
+        nav > ul  > li:hover > a + ul {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid blue;
+        }
+        /* Đường kẻ ngang của menu con */
+        nav > ul > li {
+            border-right: 1px solid red;
+            position: relative;
+        }
+        /* Bỏ đường kẻ ngang cuối cùng của menu con */
+        nav li > ul > li {
+            border-bottom: 1px solid gold;
+        }
+        nav li > ul > li:last-child{
+            border-bottom: 0;
+        }
+        nav a{
+            display: block;
+            padding: .5rem;
+        }
+        nav a:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+            <li><a href="#" title="Sản phẩm">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Lập trình Web PHP&MYSQL</a></li>
+                    <li><a href="#">Lập trình Web NetCore</a></li>
+                    <li><a href="#">Lập trình Web Java SpringBoot</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+            <li><a href="#" title="Hỗ trợ">Hỗ trợ</a></li>
+            <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+>>>>>>> 56d533de745b472aafb1ab399916a3e44f40a741
+</html>

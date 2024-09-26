@@ -1,0 +1,129 @@
+body {
+    background-color: var(--background-color-box);
+}
+.bg-white {
+    background-color: #fff;
+}
+.container {
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+}
+.row {
+    display: flex; /* Xuống hàng */
+    flex-wrap: wrap; /* Đầy quá tự xuống hàng */
+}
+.col {
+    width: 100%;
+}
+.item {
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+#san-pham img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.content {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: var(--color); /* color: #2c2e53*/
+}
+#san-pham p del {
+    color: var(--gray);
+}
+#san-pham p {
+    margin: .5rem 0;
+}
+#san-pham h3 {
+    margin-top: 1rem;
+}
+
+/* // xxl applies to x-large devices (large desktops, less than 1920px) */
+@media (max-width: 1919.98px) { 
+    .container {
+        margin: 1rem 10%;
+        width: 80%;
+    }
+    .col {
+        width: 20%;
+    }
+    #san-pham img {
+        height: 15rem;
+    }
+}
+
+/* // xxl applies to x-large devices (large desktops, less than 1600px) */
+@media (max-width: 1599.98px) { 
+    .container {
+        margin: 1rem 10%;
+        width: 80%;
+    }
+    .col {
+        width: 20%;
+    }
+    #san-pham img {
+        height: 15rem;
+    }
+}
+
+/* // xxl applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .container {
+        margin: 1rem auto;
+        width: 80%;
+    }
+    .col {
+        width: 25%;
+    }
+    #san-pham img {
+        height: 15rem;
+    }
+}
+
+/* // xl applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .container {
+        margin: 1rem 10%;
+    }
+    .col {
+        width: 33.333333%;
+    }
+    #san-pham img {
+        height: 15rem;
+    }
+}
+
+/* // lg applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .container {
+        margin: 1rem auto;
+    }
+    .col {
+        width: 50%;
+    }
+}
+
+/* // md applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .container {
+        margin: 1rem auto;
+    }
+    .col {
+        width: 100%;
+    }
+    #san-pham img {
+        height: 15rem;
+    }
+}
+
+/* // sm applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .container {
+        margin: 1rem auto;
+    }
+}
