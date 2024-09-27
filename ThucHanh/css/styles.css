@@ -414,6 +414,7 @@ footer{
 .col-md-6 img {
     padding-right: 1rem;
 }
+.row
 .box-content {
     background: #f3f3f3;
     padding-top: 5rem;
@@ -525,7 +526,6 @@ footer{
     max-width: 10rem;
     border-top: .5rem solid #bd945f;
     transform: translate(-50%, -50%);
-    margin-left: 61rem;
 }
 .home-news box {
     position: relative;
@@ -554,11 +554,11 @@ footer{
     color: #bd945f;
 }
 .home-news .desc {
-    font-family: Gotham-Thin;
+    font-family: Gotham-Medium, sans-serif;
     font-weight: 700;
     display: -webkit-box;
-    -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-align: justify;
 }
