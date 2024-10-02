@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng</title>
+</head>
+<body>
+    <h1>Sử dụng sort() phương thức để sắp xếp mảng</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const hoaqua = ["Chuối", "Cam", "Đào", "Quýt", "Bưởi", "Nhãn"];
+        document.getElementById("demo1").innerHTML = hoaqua;
+
+        hoaqua.sort(); // Method để sắp xếp chữ cái đâù tiên trong array
+        document.getElementById("demo2").innerHTML = hoaqua;
+
+        hoaqua.reverse(); // Method viết ngược lại
+        document.getElementById("demo3").innerHTML = hoaqua;
+    </script>
+</body>
+</html>
