@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p>Gán function với 1 giá trị không xác định</p>
+    <p id="demo2"></p>
+    <p>Truy cập 1 hàm mà không có () hàm sẽ trở về:</p>
+    <p id="demo3"></p>
+
+    <script>
+        function myFunction(p1, p2) {
+           return p1 * p2;
+        }
+        let result = myFunction(4,3);
+        document.getElementById("demo").innerHTML = result;
+        
+        function LeLa(f) {
+            return (5/9)*(f-4);
+        }
+        let value = LeLa(8);
+        document.getElementById("demo1").innerHTML = value;
+
+        let v = LeLa();
+        document.getElementById("demo2").innerHTML = v;
+
+        let x = LeLa;
+        document.getElementById("demo3").innerHTML = x;
+    </script>
+</body>
+</html>
