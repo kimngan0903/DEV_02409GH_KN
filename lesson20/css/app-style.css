@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+.bg-white {
+    background-color: #fff;
+    height: 400px;
+}
+.box-item {
+    border: 2px solid #ccc;
+    box-shadow: 6px 6px 6px -1px rgba(0, 0, 0, 34);
+}
+.img {
+    width: 5rem;
+}
+.img img {
+    width: 100%;
+    
+}
+.gh-item button {
+    padding: 0 .75rem;
+    border: 1px solid #cccc;
+}
+.gh-item input {
+    width: 35px;
+    border: 0;
+    border-top: 1px solid #cccc;
+    border-bottom: 1px solid #cccc;
+    text-align: center;
+}
+.gh-item input:focus {
+    outline: none;
+}
+#gioHang p {
+    margin: 0.25rem ;
+    font-size: .9rem;
+}
+#gioHang p span {
+    color: red;
+}
+.gh-item {
+    border-bottom: 1px solid #ccc;
+}
+.gh-action button {
+    margin: .15rem 0;
+    color: #bc7239;
+    background-color: #fff;
+    border: 2px solid #14396d;
+    border-radius: 3px;
+}
+.gh-action button:hover {
+    background-color: aqua;
+}
+.btn-action button {
+    width: 9rem;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #14396d;
+    border-radius: 3px;
+}
+.btn-action button:hover {
+    background-color: aquamarine;
+}
