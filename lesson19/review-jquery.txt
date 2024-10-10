@@ -1,0 +1,19 @@
+#library:
+-- local: tải về project từ trang chủ https://jquery.com/
+-- api:(CDN, cloud,...); https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
+    ---: nhúng vào phần head, khuyến nghị nên nhúng ở cuối trang html và trước thẻ đóng body
+
+#Syntax:
+$(document).ready(function() {
+    -- Các câu lệnh sử dụng JQuery
+
+    -- Tương tác
+    $(selector).action(...)
+        -- selector: html tag, #id, .class-name, css selector,...
+        -- VD:
+            $('#zone1').css("background-color","red");
+            $('#zone1').css({
+                'color':'red',
+                'background-color':'green'
+            });
+});

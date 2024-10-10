@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Xoài</td>
+            <td>Cam</td>
+        </tr>
+        <tr>
+            <td>Chuối</td>
+            <td>Táo</td>
+        </tr>
+        <tr>
+            <td>Nho</td>
+            <td>Dâu</td>
+        </tr>
+        <tr>
+            <td>Bưởi</td>
+            <td>Đào</td>
+        </tr>
+        <tr>
+            <td>Quýt</td>
+            <td>Nhãn</td>
+        </tr>
+        <tr>
+            <td>Vải</td>
+            <td>Mãng cầu</td>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("tr:even").css("background-color","cyan"); //Lẻ
+            $("tr:odd").css("background-color","orange"); //Chẵn
+        });
+    </script>
+</body>
+</html>

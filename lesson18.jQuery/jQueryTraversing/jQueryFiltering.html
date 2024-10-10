@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Filtering</h1>
+    <div style="border: 2px solid black;">
+        <p>Đây là p1</p>
+        <p>Đây là p2</p>
+    </div>
+    <div style="border: 2px solid black;">
+        <p>Đây là p1</p>
+        <p>Đây là p2</p>
+    </div>
+    <div style="border: 2px solid black;">
+        <p>Đây là p1</p>
+        <p>Đây là p2</p>
+    </div>
+    <div style="border: 2px solid black;">
+        <p>Đây là p1</p>
+        <p>Đây là p2</p>
+    </div>
+    <div class="div1" style="border: 2px solid black;">
+        <p>Đây là div1</p>
+        <p>Đây là p2</p>
+    </div>
+    <div style="border: 2px solid black;">
+        <p>Đây là p1</p>
+        <p>Đây là p2</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("div").first().css({"background-color":"red"});
+            $("div").last().css({"background-color":"green"});
+            $("div").eq(1).css({"background-color":"orange"});
+            $("div").filter(".div1").css({"background-color":"pink"});
+            $("div").not(".div1").css({"background-color":"violet"});
+        });
+    </script>
+</body>
+</html>

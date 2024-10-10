@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Đây là phần tử thẻ h2</h2>
+    <p>Đây là phần tử của thẻ p</p>
+    <p>Đây là đoạn phần tử của thẻ p</p>
+    <button class="btn1">Click để ẩn các đoạn có trong thẻ p</button>
+    <button class="btn2">Hiển thị p</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn1").click(function() {
+                $("p").hide();
+            });
+            $(".btn2").click(function() {
+                $("p").show();
+            });
+        });
+    </script>
+</body>
+</html>

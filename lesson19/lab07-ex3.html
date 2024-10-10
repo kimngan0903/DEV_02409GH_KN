@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab07 - Bài thực hành 03</title>
+    <!-- Nhúng link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .img-large {
+            position: relative;
+        }
+        .img-large img {
+            width: 100%;
+            height: 35rem;
+            margin: 0 auto;
+            background-color: red;
+            animation-name: stretch;
+            animation-duration: 1.5s; 
+            animation-timing-function: ease-out; 
+            animation-delay: 0;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+        @keyframes stretch {
+            0% {
+            transform: scale(.3);
+            background-color: red;
+            border-radius: 100%;
+            }
+            50% {
+            background-color: orange;
+            }
+            100% {
+            transform: scale(1.5);
+            background-color: yellow;
+            }
+          }
+        .img-small img {
+            max-width: 200px;
+            max-height: 150px;
+            cursor: pointer;
+        }
+        .img-border {
+            border: 8px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container border my-2">
+        <h1>Ảnh thiên nhiên đẹp</h1>
+    </header>
+    <section id="zone1" class="container border my-2 p-2">
+        <div class="img-large">
+            <img src="./images/mua-thu-1.jpg" alt="Mùa thu 1">
+        </div>
+        <div class="img-small d-flex justify-content-between mt-3">
+            <img src="./images/mua-thu-1.jpg" alt="Mùa thu 1">
+            <img src="./images/mua-thu-2.jpg" alt="Mùa thu 2">
+            <img src="./images/mua-thu-3.jpg" alt="Mùa thu 3">
+            <img src="./images/mua-thu-4.jpg" alt="Mùa thu 4">
+            <img src="./images/mua-thu-5.jpg" alt="Mùa thu 5">
+        </div>
+    </section>
+
+    <!-- Nhúng JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Nhúng bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- code js -->
+    <script>
+        $(document).ready(function() {
+            $('.img-small img').click(function() {
+                //Lấy ảnh hiện tại
+                let img_src = $(this).attr('src');
+                // Gắn cho ảnh lớn
+                $('.img-large img').attr('src', img_src);
+
+                // Bỏ hết đường viền của ảnh
+                //$('.img-small img').each(function() {
+                //    $(this).css({
+                //        'border': '0'
+                //    });
+                //});
+                //Tô màu đường viền cho ảnh con
+                ////$(this).css({
+                ////    'border':'8px solid green',
+                ////    'cursor':'pointer'
+                ////});
+
+                // Bỏ đường viền cũ
+                $('.img-small img').each(function() {
+                    $(this).removeClass('img-border');
+                });
+                // Tô màu đường viền ảnh con
+                $(this).addClass('img-border');
+            });
+        });
+    </script>
+</body>
+</html>

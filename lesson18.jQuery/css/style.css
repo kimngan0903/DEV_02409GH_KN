@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    margin: auto;
+}
+#studentForm {
+    display: none;
+    width: 100%;
+}
+.action-btn {
+    margin-right: 5px;
+}
+.md-3 {
+    display: flex;
+}
+.search-bar, .sort-bar, .search-btn {
+    margin-bottom: 1.2rem;
+}
+.sort-bar {
+    width: 11rem;
+}
+.control-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+
+}
+.form-label {
+    width: 30%;
+}
+.form-control {
+    width: 70%;
+}
+
+.right {
+    padding: 1rem;
+}
+label {
+    width: 25%;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab07 - Bài thực hành số 2</title>
+    <style>
+        .button button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section id="zone1">
+        <h1>Chọn màu chữ</h1>
+        <div class="button">
+            <button value="red">Đỏ</button>
+            <button value="blue">Xanh</button>
+            <button value="yellow">Vàng</button>
+            <button value="gray">Ghi</button>
+            <button value="#7F00FF">Tím</button>
+        </div>
+        <div class="noi-dung">
+            <p>
+                Lập trình web với PHP và MySQL
+            </p>
+        </div>
+        <button id="reset">Reset</button>
+    </section>
+    
+    <!-- Nhúng JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- code js -->
+
+    <script>
+        $(document).ready(function() {
+            //Test jquery
+            //alert('Xin chào, tôi là Jquery');
+
+            // Tô màu cho các button tương ứng (màu nền)
+            $('.button > button').each(function() {
+                // Lấy màu từ thuộc tính value của button
+                let valColor = $(this).attr("value");
+                // Tô màu nền (valColor) cho button 
+                $(this).css({
+                            'background': valColor,
+                            'border':'1px solid ' + valColor,
+                            'padding': '.15rem 1rem'
+                        });
+                });
+            //Tô màu chữ nội dung
+            $('.button button').click(function() {
+                // Lấy màu từ nút
+                let color = $(this).attr('value');
+                // Set color cho nội dung
+                $('.noi-dung p').css({
+                    'color':color
+                });
+            });
+
+            // Reset
+            $('#reset').click(function() {
+                $('.noi-dung p').css({
+                    'color':'black'
+                });
+            });
+            // Hoặc cách khác của reset
+            $('#zone > button').click(function() {
+                $('.noi-dung p').css({
+                    'color':'black'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
